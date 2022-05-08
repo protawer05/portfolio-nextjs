@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import styles from './AboutMe.module.scss'
 import { APP_URL } from '../../../../constants'
+import DescriptionButton from './description-button/DescriptionButton'
+import EmailButton from './email-button/EmailButton'
 
 const AboutMe = ({me}) => {
     return (
@@ -25,6 +27,7 @@ const AboutMe = ({me}) => {
                  />
              </div>
             <EmailButton/>
+            <DescriptionButton description={me.description}/>
         </div>
     );
 };
