@@ -16,7 +16,7 @@ const RecentVideos = () => {
         {isLoading 
         ? 'Загрузка' 
         : data.length 
-        ? data.map(video => <VideoItem key={video._id} item={video}/>) 
+        ? data.map(video => <VideoItem key={video.videoId} item={video}/>) 
         : 'Пока не подгрузились'}
         </div>
     );
